@@ -1,53 +1,220 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Hamzah</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamzah Ali | Professional</title>
 
-  <style>
-    body {
-      font-family: Arial;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 20px auto;
-      border-radius: 10px;
-      max-width: 400px;
-    }
+<style>
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
 
-    .btn {
-      background: #22c55e;
-      padding: 10px 20px;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      display: inline-block;
-      margin-top: 10px;
-    }
-  </style>
+body {
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+/* NAVBAR */
+.nav {
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(15,23,42,0.8);
+    backdrop-filter:blur(10px);
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    z-index:1000;
+}
+
+.nav a {
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+}
+
+/* HERO */
+.hero {
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background: radial-gradient(circle at top, #1e293b, #020617);
+    padding:20px;
+}
+
+.hero img {
+    width:140px;
+    border-radius:50%;
+    border:3px solid #38bdf8;
+    margin-bottom:20px;
+}
+
+.hero h1 {
+    font-size:42px;
+}
+
+.hero p {
+    max-width:500px;
+    margin:10px auto;
+    opacity:0.7;
+}
+
+.btn {
+    margin-top:20px;
+    padding:12px 24px;
+    border-radius:8px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    display:inline-block;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover {
+    transform:scale(1.05);
+}
+
+/* SECTION */
+.section {
+    padding:80px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.title {
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+/* GRID */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card {
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-5px);
+}
+
+/* SKILLS */
+.skills span {
+    display:inline-block;
+    padding:8px 12px;
+    margin:5px;
+    border-radius:6px;
+    background:#38bdf8;
+    color:black;
+}
+
+/* WA FLOAT */
+.wa-float {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+.footer {
+    text-align:center;
+    padding:20px;
+    opacity:0.5;
+}
+</style>
 </head>
 
 <body>
-  <h1>CV Online</h1>
-  <p>Hamzah Ali</p>
 
-  <div class="card">
-    <h2>Tentang Saya</h2>
-    <p>Saya siap bekerja dan bertanggung jawab.</p>
-  </div>
+<!-- NAVBAR -->
+<div class="nav">
+    <div><b>Hamzah</b></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#exp">Experience</a>
+        <a href="#skill">Skill</a>
+    </div>
+</div>
 
-  <div class="card">
-    <h2>Kontak</h2>
-    <p>WhatsApp: 08xxxxxxxxxx</p>
-    <a href="#" class="btn">Hubungi Saya</a>
-  </div>
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <img src="foto.jpg">
+        <h1>HAMZAH ALI</h1>
+        <p>Sertifikasi & Konstruksi Profesional</p>
+        <p>
+        Fokus pada layanan sertifikasi konstruksi dengan hasil akurat, cepat, dan terpercaya.
+        </p>
+
+        <a class="btn" href="https://wa.me/6282218890523" target="_blank">
+            Hubungi Saya
+        </a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2 class="title">Tentang Saya</h2>
+    <div class="card">
+        Bergerak di bidang jasa pembuatan sertifikasi konstruksi. 
+        Saya melayani dengan hati dan mengutamakan kepuasan klien.
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="exp">
+    <h2 class="title">Pengalaman</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>RSUD dr Slamet Garut</h3>
+            <p>Staff (2016 - 2024)</p>
+            <p>Mengelola data rekam medis pasien.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILL -->
+<section class="section" id="skill">
+    <h2 class="title">Skill</h2>
+    <div class="card skills">
+        <span>HTML</span>
+        <span>Desain</span>
+        <span>Komunikasi</span>
+        <span>Coding</span>
+        <span>Mengemudi</span>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Hamzah Ali
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/6282218890523" target="_blank">💬</a>
+
 </body>
 </html>
